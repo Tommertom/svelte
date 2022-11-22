@@ -572,6 +572,16 @@ It's possible to have multiple event listeners for the same event:
 <button on:click={increment} on:click={track}>Click me!</button>
 ```
 
+But also this is possible:
+
+```sv
+<button on:click on:click>>
+	The component itself will emit the click event twice to its parent!!
+</button>
+```
+
+
+
 #### bind:*property*
 
 ```sv
